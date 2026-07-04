@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32E4ECF42FF84BED00E8811B /* MenuBarExtraAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 32E4ECF32FF84BED00E8811B /* MenuBarExtraAccess */; };
+		32E4ECF62FF8547300E8811B /* SettingsPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E4ECF52FF8547300E8811B /* SettingsPanelController.swift */; };
 		BB3EAD262E38FCA10009833A /* MenuBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3EAD252E38FCA10009833A /* MenuBarIcon.swift */; };
 		BB3EAD292E38FEBC0009833A /* FontDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3EAD282E38FEBC0009833A /* FontDesign.swift */; };
 		BB5E3A9E2E2C2AB900F53E8B /* Logger+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E3A9D2E2C2AB900F53E8B /* Logger+Ext.swift */; };
@@ -26,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32E4ECF52FF8547300E8811B /* SettingsPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPanelController.swift; sourceTree = "<group>"; };
 		BB3EAD252E38FCA10009833A /* MenuBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarIcon.swift; sourceTree = "<group>"; };
 		BB3EAD282E38FEBC0009833A /* FontDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDesign.swift; sourceTree = "<group>"; };
 		BB5E3A9D2E2C2AB900F53E8B /* Logger+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Logger+Ext.swift"; sourceTree = "<group>"; };
@@ -50,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E4ECF42FF84BED00E8811B /* MenuBarExtraAccess in Frameworks */,
 				BB87182C2D970AA000918708 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +118,7 @@
 				BBE7D2E02E2F2A0600C87CFB /* AnimatableFontModifier+Ext.swift */,
 				BB5E3A9D2E2C2AB900F53E8B /* Logger+Ext.swift */,
 				BB7F70792E341063008DC84E /* Constants.swift */,
+				32E4ECF52FF8547300E8811B /* SettingsPanelController.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			name = BarNotes;
 			packageProductDependencies = (
 				BB87182B2D970AA000918708 /* KeychainAccess */,
+				32E4ECF32FF84BED00E8811B /* MenuBarExtraAccess */,
 			);
 			productName = TopNotes;
 			productReference = BBCA9E522D946F6100B3BE9B /* BarNotes.app */;
@@ -177,6 +183,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				BBCA9EBA2D95C8C800B3BE9B /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				32E4ECF22FF84BED00E8811B /* XCRemoteSwiftPackageReference "MenuBarExtraAccess" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BBCA9E532D946F6100B3BE9B /* Products */;
@@ -214,6 +221,7 @@
 				BBCA9E6D2D946F6C00B3BE9B /* ContentView.swift in Sources */,
 				BB7F707A2E341063008DC84E /* Constants.swift in Sources */,
 				BB3EAD262E38FCA10009833A /* MenuBarIcon.swift in Sources */,
+				32E4ECF62FF8547300E8811B /* SettingsPanelController.swift in Sources */,
 				BBF17E6B2D9EE0BC00679ECC /* Settings.swift in Sources */,
 				BBCA9E6E2D946F6C00B3BE9B /* BarNotes.swift in Sources */,
 				BBE7D2E12E2F2A0600C87CFB /* AnimatableFontModifier+Ext.swift in Sources */,
@@ -365,6 +373,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BarNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -401,6 +410,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"BarNotes/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -448,6 +458,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		32E4ECF22FF84BED00E8811B /* XCRemoteSwiftPackageReference "MenuBarExtraAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/MenuBarExtraAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
 		BBCA9EBA2D95C8C800B3BE9B /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
@@ -459,6 +477,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		32E4ECF32FF84BED00E8811B /* MenuBarExtraAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32E4ECF22FF84BED00E8811B /* XCRemoteSwiftPackageReference "MenuBarExtraAccess" */;
+			productName = MenuBarExtraAccess;
+		};
 		BB87182B2D970AA000918708 /* KeychainAccess */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BBCA9EBA2D95C8C800B3BE9B /* XCRemoteSwiftPackageReference "KeychainAccess" */;
